@@ -59,25 +59,20 @@ To add Tailwind CSS to your Vite + React project, follow these steps:
 3. Update the `tailwind.config.js` file with the following content to specify which files Tailwind should scan:
 
    ```js
-   /** @type {import('tailwindcss').Config} */
-   export default {
-     content: [
-       './index.html',
-       './src/**/*.{js,ts,jsx,tsx}',
+   import { defineConfig } from 'vite'
+   import tailwindcss from '@tailwindcss/vite'
+   export default defineConfig({
+   plugins: [
+       tailwindcss(),
      ],
-     theme: {
-       extend: {},
-     },
-     plugins: [],
-   }
+   })
    ```
 
 4. Add the following lines to your `src/index.css` (or `src/main.css` if you’re using that):
 
    ```css
-   @tailwind base;
-   @tailwind components;
-   @tailwind utilities;
+   @import "tailwindcss";
+
    ```
 
 ### Step 3: Install Required Packages
