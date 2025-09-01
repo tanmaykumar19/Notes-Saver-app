@@ -160,24 +160,6 @@ paste/
 
 ---
 
-## Tailwind CSS Configuration
-
-The `tailwind.config.js` file is configured to scan all the files in the `src` directory for Tailwind CSS classes and allows you to customize the theme and plugins.
-
-```js
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    './index.html',
-    './src/**/*.{js,ts,jsx,tsx}',
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-
 ---
 
 ## Conclusion
