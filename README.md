@@ -152,8 +152,6 @@ paste/
 │   └── index.css
 │
 ├── .eslintrc.js
-├── tailwind.config.js
-├── postcss.config.js
 ├── vite.config.js
 └── package.json
 ```
